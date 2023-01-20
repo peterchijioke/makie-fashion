@@ -1,0 +1,23 @@
+.home-container{
+//  height: 350px;
+ margin-top: 2rem;
+//  width: 100%;
+//  background-color: aqua;
+//  overflow: hidden;
+
+}
+.row-top{
+  background-color: aliceblue;
+  height: 25rem;
+  .inner-col{
+    background-color: green;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inner-coltwo{
+    background-color: pink;
+    height: 100%
+  }
+}

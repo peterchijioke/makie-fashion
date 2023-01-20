@@ -1,0 +1,67 @@
+
+.logo-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  .app-logo-container{
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+ 
+  .logo-tag{
+    font-size: 30px;
+    font-weight: 800;
+    color: purple;
+    // font-family: 'Alata', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
+  animation-name: logoTwist;
+  animation-duration: 4s;
+  position: absolute;
+  }
+}
+ .name-tag{
+  color: white;
+ font-family: 'Jost', sans-serif;
+  margin-left: 8px;
+  font-size: 30px;
+  font-weight: 400;
+  animation-name: logoText;
+  animation-duration: 4s;
+  }
+}
+
+
+
+  @keyframes logoTwist{
+    from{
+      transform: rotateX(90deg);
+    }
+    to{
+
+    }
+  }
+
+  @keyframes logoText{
+   from{
+     margin-left: 30px;
+   }
+   to{
+
+   }
+  }
+
+
+  @media screen and (max-width:900px) {
+    .logo-wrapper{
+        .name-tag{
+          display: none;
+        }
+    }
+  }
