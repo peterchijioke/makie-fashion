@@ -20,11 +20,11 @@ export default function Home() {
       <Row className="row-top">
         <Col className="inner-col" sm={8}>
           <Carousel activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
+            <Carousel.Item as={"div"}>
               <img className="d-block w-100" src={ImageOne} alt="First slide" />
             </Carousel.Item>
 
-            <Carousel.Item>
+            <Carousel.Item as={"div"}>
               <img
                 height={350}
                 className="d-block w-100 h-100"
