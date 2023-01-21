@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./Home.scss";
-import ImageOne from "../../images/main2.png";
-import ImageTwo from "../../images/main1.png";
-import Carousel from "react-bootstrap/Carousel";
+import ImageOne from "../../images/gigi.gif";
+import ImageTwo from "../../images/hh.jpg";
+import ImageCat from "../../images/bsb.jpg";
+import ImageCat2 from "../../images/del.png";
 import { Container, Row, Col } from "react-bootstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 export default function Home() {
   const [index, setIndex] = useState(0);
@@ -15,29 +17,69 @@ export default function Home() {
   ) => {
     setIndex(selectedIndex);
   };
+  const [change, onChange] = useState();
+  const onClickItem = () => {};
+  const onClickThumb = () => {};
   return (
-    <div className="container">
-      <Row className="row-top">
-        <Col className="inner-col" sm={8}>
-          <Carousel activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item as={"div"}>
-              <img className="d-block w-100" src={ImageOne} alt="First slide" />
-            </Carousel.Item>
+    <div className="home-container">
+      <div className="banner-section">
+        <div className="carousel-container">
+          <Carousel
+            useKeyboardArrows
+            showStatus={false}
+            showIndicators
+            showThumbs={false}
+            infiniteLoop
+          >
+            <div>
+              <img className="image-carousel" src={ImageOne} />
 
-            <Carousel.Item as={"div"}>
-              <img
-                height={350}
-                className="d-block w-100 h-100"
-                src={ImageTwo}
-                alt="Third slide"
-              />
-            </Carousel.Item>
+              {/* <p className="legend">Legend 1</p> */}
+            </div>
+            <div>
+              <img className="image-carousel" src={ImageOne} />
+
+              {/* <p className="legend">Legend 1</p> */}
+            </div>
+            <div>
+              <img className="image-carousel" src={ImageTwo} />
+
+              {/* <p className="legend">Legend 2</p> */}
+            </div>
+            <div>
+              <img className="image-carousel" src={ImageTwo} />
+
+              {/* <p className="legend">Legend 2</p> */}
+            </div>
           </Carousel>
-        </Col>
-        <Col className="inner-coltwo" sm={4}>
-          sm=4
-        </Col>
-      </Row>
+        </div>
+        <div className="banner-side one_"></div>
+        <div className="banner-side categoryies">
+          <div className="cat-item-cat">
+            <img className="image-carousel" src={ImageCat} />
+          </div>
+          <div className="cat-item-cat">
+            <img className="image-carousel" src={ImageCat2} />
+          </div>
+        </div>
+      </div>
+      {/* Category section */}
+      <div className="category-section">
+        <div className="cat-item"></div>
+        <div className="cat-item "></div>
+        <div className="cat-item"></div>
+        <div className="cat-item "></div>
+        <div className="cat-item"></div>
+        <div className="cat-item "></div>
+        <div className="cat-item "></div>
+        <div className="cat-item"></div>
+        <div className="cat-item "></div>
+        <div className="cat-item "></div>
+        <div className="cat-item "></div>
+        <div className="cat-item"></div>
+        <div className="cat-item "></div>
+      </div>
+      <div className="card-section"></div>
     </div>
   );
 }
