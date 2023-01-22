@@ -4,6 +4,13 @@
   width: 100%;
   padding: 0px 5% 0px 5%;
   margin-bottom: 1rem;
+  .header-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4em;
+    color: #415661;
+    margin-bottom: 15px;
+  }
   .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;

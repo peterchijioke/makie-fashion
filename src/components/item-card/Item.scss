@@ -1,3 +1,5 @@
+$box-shadow: 0px 50px 362px rgba(0, 0, 0, 0.09),
+  20px 30px 70px rgba(0, 0, 0, 0.045);
 .item-wrapper{
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -39,4 +41,7 @@
     margin-right: 2px;
    }
   }
+}
+.item-wrapper:hover{
+  box-shadow:$box-shadow ;
 }
