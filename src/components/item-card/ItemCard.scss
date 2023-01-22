@@ -1,0 +1,15 @@
+
+#wrapper-items{
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0px 5% 0px 5%;
+  margin-bottom: 1rem;
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  // background-color: #2196F3;
+  // padding: 10px;
+  
+}
+}

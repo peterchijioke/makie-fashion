@@ -15,7 +15,7 @@ $box-shadow: 0px 43px 362px rgba(0, 0, 0, 0.09),
   height: 25rem;
   // background-color: white;
  
-  margin-top: 3rem;
+  margin-top: 2rem;
   .carousel-container{
     height: 100%;
     width: 70%;
@@ -34,13 +34,11 @@ $box-shadow: 0px 43px 362px rgba(0, 0, 0, 0.09),
   .banner-side{
     width: 30%;
     height: 100%;
-   
-    // padding: 5px;
     border-radius: 5px;
     margin-left: 1rem;
   }
-  .one_{ background-color: #ccc;}
-  .categoryies{
+ 
+  .ads-section-top{
   // background-color: red;
   display: flex;
   flex-direction: column;
@@ -60,37 +58,7 @@ $box-shadow: 0px 43px 362px rgba(0, 0, 0, 0.09),
   }
 }
 }
-.category-section{
 
-
-position: relative;
-background-color: white;
-box-shadow: $box-shadow;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-height: 10rem;
-margin-top: 1rem;
-width: 90%;
-align-self: center;
-border-radius: 5px;
-padding: 1rem;
-max-height: 100px;
-    overflow-y: auto;
-.cat-item{
-  height:90%;
-  width:150px;
-  border-radius: 5px;
-  background-color: pink;
-  margin: 5px;
-  scroll-snap-align: start;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-}
 .card-section{
   height: 20rem;
   width: 90%;
@@ -123,6 +91,11 @@ max-height: 100px;
    margin-left: 0px;
    margin-top: 1rem;
    height: 15rem;
+  
+  
+  }
+  .ads-section-top{
+    display: none;
   }
 }
 } 

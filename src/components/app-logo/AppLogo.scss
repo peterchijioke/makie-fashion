@@ -9,7 +9,7 @@
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  background-color: white;
+  background-color: purple;
   display: flex;
   align-items: center;
   position: relative;
@@ -18,7 +18,7 @@
   .logo-tag{
     font-size: 30px;
     font-weight: 800;
-    color: purple;
+    color: white;
     // font-family: 'Alata', sans-serif;
   font-family: 'Fira Sans', sans-serif;
   animation-name: logoTwist;
@@ -27,7 +27,7 @@
   }
 }
  .name-tag{
-  color: white;
+  color: purple;
  font-family: 'Jost', sans-serif;
   margin-left: 8px;
   font-size: 30px;

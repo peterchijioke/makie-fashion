@@ -3,7 +3,7 @@ $box-shadow: 0px 43px 362px rgba(0, 0, 0, 0.09),
 #app-nav-container{
   height: 70px;
   width: 100%;
-  background-color: purple;
+  background-color: white;
   box-shadow: $box-shadow;
   display: flex;
   // position: fixed;
@@ -45,12 +45,12 @@ $box-shadow: 0px 43px 362px rgba(0, 0, 0, 0.09),
         display: flex;
         align-items: center;
         justify-content: center;
-        border-right: 2px solid white;
+        border-right: 2px solid purple;
         cursor: pointer;
         .login-btn{
           font-size: 16px;
         font-weight: 700;
-        color: white;
+        color: purple;
         }
           .login-btn:hover{
             color: #ccc;
