@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
 import "./CategorySection.scss";
-import WatchImage from "../../../images/wat.png";
-import PhoneImage from "../../../images/phone.png";
+import WatchImage from "../../images/wat.png";
+import PhoneImage from "../../images/phone.png";
 export default function CategoryCard() {
   return (
     <div className="banner-side one_">

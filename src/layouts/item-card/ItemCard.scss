@@ -1,9 +1,10 @@
-
+$box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 #wrapper-items{
   margin-top: 1rem;
   width: 100%;
   padding: 0px 5% 0px 5%;
   margin-bottom: 1rem;
+
   .header-title{
     font-weight: 700;
     font-size: 20px;
@@ -12,6 +13,9 @@
     margin-bottom: 15px;
   }
   .grid-container {
+  box-shadow: $box-shadow;
+  padding: 10px;
+  border-radius: 5px;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
@@ -19,4 +23,18 @@
   // padding: 10px;
   
 }
+}
+
+@media screen and (max-width:900px) {
+  #wrapper-items{
+
+  .header-title{
+  }
+  .grid-container {
+  
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+}
+
 }

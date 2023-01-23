@@ -5,7 +5,8 @@ import "./ItemCard.scss";
 export default function ItemCard() {
   return (
     <div id="wrapper-items">
-      <span className="header-title">Popular Stock</span>
+      <label className="header-title">Popular Stock</label>
+      <div></div>
       <div className="grid-container">
         {Array(8)
           .fill(0)

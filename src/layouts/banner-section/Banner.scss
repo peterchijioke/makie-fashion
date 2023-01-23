@@ -1,0 +1,82 @@
+
+
+
+  .banner-section{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  height: 25rem;
+ 
+  margin-top: 2rem;
+  .carousel-container{
+    height: 100%;
+    width: 70%;
+    // background-color: aqua;
+    // padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     border-radius: 5px;
+  
+    .image-carousel{
+      height: 25rem;
+        border-radius: 5px;
+    }
+  }
+  .banner-side{
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    margin-left: 1rem;
+  }
+ 
+  .ads-section-top{
+  // background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: scroll;
+  gap: 1rem;
+  .cat-item-cat{
+    height: 50%;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: bisque;
+    .image-carousel{
+      width: 100%;
+    }
+  }
+}
+}
+
+
+@media screen and (max-width:900px) {
+ .banner-section{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  .carousel-container{
+    width: 100%;
+    .image-carousel{
+      height: 18rem;
+        border-radius: 5px;
+        
+    }
+  }
+  .banner-side{
+   width: 100%;
+   margin-left: 0px;
+   margin-top: 1rem;
+   height: 15rem;
+  
+  
+  }
+  .ads-section-top{
+    display: none;
+  }
+}
+}

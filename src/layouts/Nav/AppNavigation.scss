@@ -1,12 +1,12 @@
-$box-shadow: 0px 43px 362px rgba(0, 0, 0, 0.09),
-  0px 5.38427px 44.7779px rgba(0, 0, 0, 0.045);
+$box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 #app-nav-container{
   height: 70px;
   width: 100%;
   background-color: white;
   box-shadow: $box-shadow;
   display: flex;
-  // position: fixed;
+  position: fixed;
+  z-index: 1000;
   align-items: center;
   justify-content: center;
   .app-nav-container-inner{

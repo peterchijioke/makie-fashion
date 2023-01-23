@@ -1,0 +1,20 @@
+.footer-wrapper{
+  height: 15rem;
+  width: 100%;
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  .footer-main{
+flex-grow: 1;
+  }
+  .copy-write{
+height: fit-content;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-family: 'Poppin';
+padding-bottom: 1rem;
+  }
+}
