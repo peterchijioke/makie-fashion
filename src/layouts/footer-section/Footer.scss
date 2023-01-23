@@ -6,6 +6,28 @@
   flex-direction: column;
   .footer-main{
 flex-grow: 1;
+display: flex;
+flex-direction: row;
+background-color: green;
+align-items: center;
+justify-content: center;
+width: 90%;
+align-self: center;
+
+.footer-main-inner{
+height: 100%;
+width: 50%;
+
+display: flex;
+flex-direction: column;
+}
+.one{
+  background-color: wheat;
+  align-items: flex-start;
+}
+  }
+  .two{
+    // align-items: flex-end;
   }
   .copy-write{
 height: fit-content;
