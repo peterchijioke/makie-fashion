@@ -56,6 +56,19 @@ $box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
             color: #ccc;
           }
       }
+      .mobile-user{
+        display: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+       background-color: #ccc;
+       overflow: hidden;
+       
+       img{
+        height: 100%;
+        width: 100%;
+       }
+      }
       .nav-btn{
         width: max-content;
         align-items: center;
@@ -81,4 +94,90 @@ $box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     }
     }
   }
+}
+
+
+
+@media screen and (max-width:900px) {
+  #app-nav-container{
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  box-shadow: $box-shadow;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  .app-nav-container-inner{
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    // background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    .app-nav-logo-section{
+      width: fit-content;
+      height: 100%;
+      display: flex;
+      // background-color: bisque;
+      align-items: center;
+    justify-content: center;
+    }
+    .app-nav-link-section{
+      flex-grow: 1;
+      height: 100%;
+      // background-color: white;
+      display: flex;
+      justify-content: flex-end;
+      .app-nav-link-section-inner{
+      width: fit-content;
+      height: 100%;
+      // background-color: green;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      .login-section{
+        margin-right: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid purple;
+        cursor: pointer;
+        .login-btn{
+         display: none;
+        }
+          .login-btn:hover{
+            color: #ccc;
+          }
+      }
+       .mobile-user{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 2px solid purple;
+        opacity: 0.8;
+        img{height: 30px;
+        width: 30px;}
+       }
+      .nav-btn{
+        display: none;
+      }
+      .nav-btn:hover{
+        // box-sizing: $box-shadow;
+        background-color: white;
+        color: purple;
+        border: 1px solid purple;
+       
+      }
+    }
+    }
+  }
+}
+
 }

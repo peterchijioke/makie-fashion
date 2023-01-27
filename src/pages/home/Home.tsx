@@ -23,7 +23,7 @@ export default function Home() {
       <BannerSection />
       <PopularStockSection />
       <FeaturedStockSection />
-      <FooterSection />
+      {/* <FooterSection /> */}
     </div>
   );
 }

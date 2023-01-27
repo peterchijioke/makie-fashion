@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="footer-main-inner two">{/* To do */}</div>
       </div>
       <div className="copy-write">
-        &#169;{new Date().getFullYear()} Makie.store
+        &#169;{new Date().getFullYear()} makie.stores all rights reserved
       </div>
     </div>
   );

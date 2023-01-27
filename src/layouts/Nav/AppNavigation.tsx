@@ -1,6 +1,7 @@
 import React from "react";
 import AppLogo from "../../components/app-logo/AppLogo";
 import "./AppNavigation.scss";
+import UserImage from "../../images/user.png";
 
 export default function AppNavigation() {
   return (
@@ -16,6 +17,9 @@ export default function AppNavigation() {
             </div>
 
             <button className="nav-btn">Sell on Makie</button>
+            <div className="mobile-user">
+              <img src={UserImage} alt="" />
+            </div>
           </div>
         </div>
       </div>
