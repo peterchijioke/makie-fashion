@@ -1,25 +1,22 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Fragment } from "react";
+import { Routes, Route } from "react-router-dom";
 import Footer from "../layouts/footer-section/Footer";
 import AppNavigation from "../layouts/Nav/AppNavigation";
 import Home from "../pages/home/Home";
 import SingleProduct from "../pages/single-product/SingleProduct";
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/product",
-    element: <SingleProduct />,
-  },
-]);
+const AppRoute = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/product" element={<SingleProduct />} />
+  </Routes>
+);
 
 export default function AppRoutes() {
   return (
-    <div>
+    <Fragment>
       <AppNavigation />
-      <RouterProvider router={router} />
+      <AppRoute />
       <Footer />
-    </div>
+    </Fragment>
   );
 }

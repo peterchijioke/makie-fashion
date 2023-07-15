@@ -19,7 +19,7 @@ export default function Banner() {
           showStatus={false}
           showIndicators
           showThumbs={false}
-          infiniteLoop
+          infiniteLoop={true}
         >
           <div>
             <img className="image-carousel" src={ImageOne} />
